@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raw Downloader</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="container">
+<header><h1>raw downloader</h1><p>carregue, visualize e baixe arquivos raw</p></header>
+<section class="card">
+<label>raw url</label>
+<div class="url-row"><input id="rawUrl" type="url" placeholder="cole o link raw aqui..." autocomplete="off"><button id="loadButton">carregar</button></div>
+</section>
+<section class="card">
+<div class="section-header"><div><label>conteúdo</label><span id="fileInfo">nenhum arquivo carregado</span></div><button id="copyButton" class="secondary" disabled>copiar</button></div>
+<textarea id="content" readonly placeholder="o conteúdo completo aparecerá aqui..."></textarea>
+</section>
+<section class="card">
+<label>nome do arquivo</label><input id="fileName" type="text" value="download" placeholder="nome do arquivo">
+<label class="extension-label">extensão</label><input id="extension" type="text" value="txt" placeholder="lua">
+<button id="downloadButton" class="download" disabled>baixar arquivo</button>
+</section>
+<div id="status" class="status"></div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
